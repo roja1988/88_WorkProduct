@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container my-4">
+        <main>
+            <!-- ログイン情報入力フォーム -->
+            <form action="/login" method="post" name="loginForm">
+                <div class="mb-3">
+                    <label for="userId" class="form-label">ID</label>
+                    <input type="text" class="form-control" id="userId" required>
+                </div>
+                <div class="mb-3">
+                    <label for="userPassword" class="form-label">パスワード</label>
+                    <input type="text" class="form-control" id="userPassword" required>
+                </div>
+
+                <input class="btn btn-primary" type="submit" value="ログイン">
+            </form>
+
+            <script>
+                const form = document.loginForm;
+
+                form.addEventListener('submit', event => {
+                    console.clear();
+                    event.preventDefault();
+
+                    //ID/PWの取得
+                    const userId = form.userId.value;
+                    const userPassword = form.userPassword;
+
+                    // 入力値をコンソールに出力
+                    console.log(userId);
+                    console.log(userPassword);
+                }
+                );
+            </script>
+        </main>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
