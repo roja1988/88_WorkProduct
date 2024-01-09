@@ -8,12 +8,19 @@ window.onload = () => {
     // ボタンクリック時のイベント
     sidemenuToggle.addEventListener('click', () => {
         // 表示状態を判定
-        if(sidemenuStatus){
+        if (sidemenuStatus) {
             page.style.cssText = 'margin-left: -230px'
             sidemenuStatus = false;
-        }else{
+        } else {
             page.style.cssText = 'margin-left: 0px'
             sidemenuStatus = true;
         }
     })
+
+    fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => document.querySelector("#header").innerHTML = data);
+    fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => document.querySelector("#footer").innerHTML = data);
 }
