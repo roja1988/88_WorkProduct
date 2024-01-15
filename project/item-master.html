@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" class="h-100">
+<html xmlns:th="http://thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -7,81 +7,83 @@
     <title>製品マスター</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
 </head>
 
-<body class="h-100">
+<body>
     <!-- ヘッダー -->
     <div id="header"></div>
 
-    <div class="d-flex flex-row w-100" style="height: calc(100% - 50px)">
-        <!-- サイドメニュー -->
-        <div id="nav"></div>
-        <!-- メインコンテンツ -->
-        <main class="w-100 bg-light">
-            <!-- タイトルバー -->
-            <div class="bg-light border shadow-sm d-flex flex-row align-items-center">
-                <div class="navbar-brand toggle-menu">
-                    <button class="btn btn-primary btn-sm" id="toggle">トグル</button>
-                </div>
-                <div class="fs-4 fw-bold">Dashboard</div>
+    <main>
+        <!-- タイトルバー -->
+        <h2 class="text-primary bg-secondary fw-bold">画面名</h2>
+        <!-- コンテンツ -->
+        <form class="row g-1">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">メーカー</label>
+                <select class="form-select" aria-label="Scale">
+                    <option selected>メーカー</option>
+                    <option value="1">タミヤ</option>
+                    <option value="2">ハセガワ</option>
+                    <option value="3">アオシマ</option>
+                </select>
             </div>
-            <!-- コンテンツ -->
-            <div class="m-3">
-                <form class="row g-3">
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress2" class="form-label">Address 2</label>
-                        <input type="text" class="form-control" id="inputAddress2"
-                            placeholder="Apartment, studio, or floor">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputCity" class="form-label">City</label>
-                        <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="inputState" class="form-label">State</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div class="col-md-2">
-                        <label for="inputZip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                    </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                                Check me out
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                    </div>
-                </form>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">型番</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
-        </main>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">製品名</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">ジャンル</label>
+                <select class="form-select" aria-label="Scale">
+                    <option selected>ジャンル</option>
+                    <option value="1">飛行機</option>
+                    <option value="2">艦船</option>
+                    <option value="3">AFV</option>
+                    <option value="4">車</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">スケール</label>
+                <select class="form-select" aria-label="Scale">
+                    <option selected>スケール</option>
+                    <option value="1">1/48</option>
+                    <option value="2">1/700</option>
+                    <option value="3">1/35</option>
+                    <option value="3">1/43</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">製品シリーズ</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">番組シリーズ</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">機体名</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">備考</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary" type="button">登録</button>
+                <button class="btn btn-warning" type="button">更新</button>
+                <button class="btn btn-danger" type="button">削除</button>
+            </div>
+        </form>
+    </main>
 
 
-
-    </div>
     <script src="js/script1.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </body>
 
 </html>

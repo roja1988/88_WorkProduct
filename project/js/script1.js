@@ -1,3 +1,4 @@
+/*
 window.onload = () => {
     // toggleボタン
     let sidemenuToggle = document.getElementById('toggle')
@@ -16,14 +17,13 @@ window.onload = () => {
             sidemenuStatus = true;
         }
     })
+}
+*/
+
 
     fetch("header.html")
         .then((response) => response.text())
         .then((data) => document.querySelector("#header").innerHTML = data);
-    fetch("nav.html")
-        .then((response) => response.text())
-        .then((data) => document.querySelector("#nav").innerHTML = data);
     fetch("footer.html")
         .then((response) => response.text())
         .then((data) => document.querySelector("#footer").innerHTML = data);
-}
