@@ -1,0 +1,17 @@
+CREATE TABLE `stock_db`.`master_item` (
+  `item_id` INT NOT NULL AUTO_INCREMENT,
+  `model_number` VARCHAR(45) NOT NULL,
+  `item_name` VARCHAR(45) NOT NULL,
+  `maker_id` INT NULL,
+  `genre_id` INT NULL,
+  `scale_id` INT NULL,
+  `series` VARCHAR(45) NULL,
+  `original` VARCHAR(45) NULL,
+  `price` INT NULL,
+  `note` TEXT,
+  `delete_flg` INT NULL,
+  `register_date` DATETIME NULL,
+  `register_user_id` VARCHAR(10) NULL,
+  `update_date` DATETIME NULL,
+  `update_user_id` VARCHAR(10) NULL,
+  PRIMARY KEY (`item_id`));

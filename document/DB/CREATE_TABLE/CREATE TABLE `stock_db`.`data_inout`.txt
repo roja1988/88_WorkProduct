@@ -1,0 +1,14 @@
+CREATE TABLE `stock_db`.`data_inout` (
+  `inout_id` INT NOT NULL,
+  `item_id` INT NOT NULL,
+  `inout_quantity` INT NULL,
+  `out_area` INT NULL,
+  `in_area` INT NULL,
+  `inout_datetime` DATETIME NULL,
+  `inout_user_id` VARCHAR(10) NULL,
+  `delete_flg` INT NULL,
+  `register_datetime` DATETIME NULL,
+  `register_user_id` VARCHAR(10) NULL,
+  `update_datetime` DATETIME NULL,
+  `update_user_id` VARCHAR(10) NULL,
+  PRIMARY KEY (`inout_id`));

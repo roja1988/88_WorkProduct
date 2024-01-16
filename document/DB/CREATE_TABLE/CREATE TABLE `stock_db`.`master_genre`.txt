@@ -1,0 +1,9 @@
+CREATE TABLE `stock_db`.`master_genre` (
+  `genre_id` INT NOT NULL AUTO_INCREMENT,
+  `genre` VARCHAR(45) NOT NULL,
+  `delete_flg` INT NULL,
+  `register_date` DATETIME NULL,
+  `register_user_id` VARCHAR(10) NULL,
+  `update_date` DATETIME NULL,
+  `update_user_id` VARCHAR(10) NULL,
+  PRIMARY KEY (`genre_id`));
