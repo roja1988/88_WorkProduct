@@ -1,4 +1,4 @@
-CREATE TABLE `stock_db`.`master_user` (
+CREATE TABLE `stockdb`.`master_user` (
   `user_id` VARCHAR(10) NOT NULL,
   `user_name` VARCHAR(45) NOT NULL,
   `unit_id` INT NULL,

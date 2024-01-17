@@ -1,9 +1,9 @@
-CREATE TABLE `stock_db`.`master_maker` (
-  `maker_id` INT NOT NULL AUTO_INCREMENT,
-  `maker` VARCHAR(45) NOT NULL,
+CREATE TABLE `stockdb`.`data_stock` (
+  `item_id` INT NOT NULL,
+  `stock_quantity` INT NULL,
   `delete_flg` INT NULL,
   `register_date` DATETIME NULL,
   `register_user_id` VARCHAR(10) NULL,
   `update_date` DATETIME NULL,
   `update_user_id` VARCHAR(10) NULL,
-  PRIMARY KEY (`maker_id`));
+  PRIMARY KEY (`item_id`));

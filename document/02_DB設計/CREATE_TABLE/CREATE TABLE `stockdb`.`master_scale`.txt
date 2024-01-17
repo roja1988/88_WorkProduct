@@ -1,4 +1,4 @@
-CREATE TABLE `stock_db`.`master_scale` (
+CREATE TABLE `stockdb`.`master_scale` (
   `scale_id` INT NOT NULL AUTO_INCREMENT,
   `scale` VARCHAR(45) NOT NULL,
   `delete_flg` INT NULL,

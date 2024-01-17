@@ -1,5 +1,5 @@
-CREATE TABLE `stock_db`.`data_inout` (
-  `inout_id` INT NOT NULL,
+CREATE TABLE `stockdb`.`data_inout` (
+  `inout_id` INT NOT NULL AUTO_INCREMENT,
   `item_id` INT NOT NULL,
   `inout_quantity` INT NULL,
   `out_area` INT NULL,
