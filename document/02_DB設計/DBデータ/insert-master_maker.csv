@@ -1,0 +1,16 @@
+﻿insert into master_maker values(null,'青島文化教材社',0,now(),'admin',now(),'admin');
+insert into master_maker values(null,'壽屋',0,now(),'admin',now(),'admin');
+insert into master_maker values(null,'GSIクレオス',0,now(),'admin',now(),'admin');
+insert into master_maker values(null,'タミヤ',0,now(),'admin',now(),'admin');
+insert into master_maker values(null,'トミーテック',0,now(),'admin',now(),'admin');
+insert into master_maker values(null,'ハセガワ',0,now(),'admin',now(),'admin');
+insert into master_maker values(null,'BANDAI SPIRITS',0,now(),'admin',now(),'admin');
+insert into master_maker values(null,'ビーバーコーポレーション',0,now(),'admin',now(),'admin');
+insert into master_maker values(null,'ファインモールド',0,now(),'admin',now(),'admin');
+insert into master_maker values(null,'プラッツ',0,now(),'admin',now(),'admin');
+insert into master_maker values(null,'ボークス',0,now(),'admin',now(),'admin');
+insert into master_maker values(null,'ホビージャパン',0,now(),'admin',now(),'admin');
+insert into master_maker values(null,'マイクロエース',0,now(),'admin',now(),'admin');
+insert into master_maker values(null,'モデリウム',0,now(),'admin',now(),'admin');
+insert into master_maker values(null,'モデルアート社',0,now(),'admin',now(),'admin');
+insert into master_maker values(null,'ヤマシタホビー',0,now(),'admin',now(),'admin');

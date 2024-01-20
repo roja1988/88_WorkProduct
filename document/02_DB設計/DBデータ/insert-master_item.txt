@@ -1,0 +1,1 @@
+﻿insert into master_item values(null,'Z25','日本海軍 航空母艦 赤城',7,2,13,,,27280,'note2',0,now(),'admin',now(),'admin');
