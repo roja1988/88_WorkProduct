@@ -6,4 +6,4 @@ CREATE TABLE `stockdb`.`master_area` (
   `register_user_id` VARCHAR(10) NULL,
   `update_date` DATETIME NULL,
   `update_user_id` VARCHAR(10) NULL,
-  PRIMARY KEY (`scale_id`));
+  PRIMARY KEY (`area_id`));

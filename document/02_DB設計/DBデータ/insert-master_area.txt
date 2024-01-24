@@ -1,0 +1,8 @@
+insert into master_area values(null,'入荷',0,now(),'admin',now(),'admin');
+insert into master_area values(null,'販売',0,now(),'admin',now(),'admin');
+insert into master_area values(null,'廃棄',0,now(),'admin',now(),'admin');
+insert into master_area values(null,'倉庫',0,now(),'admin',now(),'admin');
+insert into master_area values(null,'新宿店',0,now(),'admin',now(),'admin');
+insert into master_area values(null,'池袋店',0,now(),'admin',now(),'admin');
+insert into master_area values(null,'上野店',0,now(),'admin',now(),'admin');
+
