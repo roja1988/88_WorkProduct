@@ -4,7 +4,7 @@ insert into master_genre values(null,'AFV',0,now(),'admin',now(),'admin');
 insert into master_genre values(null,'カーモデル',0,now(),'admin',now(),'admin');
 insert into master_genre values(null,'ガンダム',0,now(),'admin',now(),'admin');
 insert into master_genre values(null,'ロボット',0,now(),'admin',now(),'admin');
-insert into master_genre values(null,'フィギュアライズ',0,now(),'admin',now(),'admin');
+insert into master_genre values(null,'キャラクター',0,now(),'admin',now(),'admin');
 insert into master_genre values(null,'特撮',0,now(),'admin',now(),'admin');
 insert into master_genre values(null,'SF',0,now(),'admin',now(),'admin');
 insert into master_genre values(null,'建築',0,now(),'admin',now(),'admin');
