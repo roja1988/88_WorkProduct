@@ -1,0 +1,6 @@
+2024年01月29日	サーバー情報	
+
+java.apps.rok.jp (IP: 183.180.128.204)
+
+HTTPポート22253 SSHポート22254
+SSHログインID trainee SSHパスワードfukm4mpv
